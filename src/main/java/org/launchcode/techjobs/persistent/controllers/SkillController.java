@@ -12,16 +12,15 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
-@RequestMapping
+@RequestMapping("skills")
 public class SkillController {
     @Autowired
     private SkillRepository skillRepository;
 
-    @GetMapping
+    @GetMapping("")
     public String index(Model model){
-        model.addAttribute("title", "All Skills");
         model.addAttribute("skills", skillRepository.findAll());
-        return "index";
+        return "skills/index";
     }
 
     @GetMapping("add")

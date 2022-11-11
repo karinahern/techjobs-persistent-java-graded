@@ -17,11 +17,10 @@ public class EmployerController {
     @Autowired
     private EmployerRepository employerRepository;
 
-    @GetMapping
+    @GetMapping("")
     public String index(Model model){
-        model.addAttribute("title", "All Employers");
         model.addAttribute("employers", employerRepository.findAll());
-        return "index";
+        return "employer/index";
     }
 
     @GetMapping("add")
