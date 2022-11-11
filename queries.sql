@@ -1,10 +1,10 @@
 -- Part 1: Test it with SQL
 
 --CREATE TABLE jobs(
---    employer VARCHAR(250),
---    job VARCHAR(250),
---    job_data VARCHAR(250),
---    skill VARCHAR(250)
+--    id INT,
+--    employer VARCHAR(70),
+--    name VARCHAR(150),
+--    skills VARCHAR(250)
 --);
 
 
